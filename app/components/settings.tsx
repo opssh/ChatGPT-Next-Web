@@ -770,7 +770,9 @@ export function Settings() {
           >
             <input
               type="checkbox"
-              checked={config.enableAutoGenerateTitle}
+              checked={
+                config.globalMaskConfig.chatConfig.enableAutoGenerateTitle
+              }
               onChange={(e) =>
                 updateConfig(
                   (config) =>
